@@ -1,8 +1,98 @@
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Sofia&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+.upper_container {
+	max-width: 1300px;
+	margin: auto;
+}
+ul {
+	list-style: none;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	white-space: nowrap;
+}
+.footer {
+    position: fixed;
+	background-color: rgb(6, 2, 15);
+	padding: 70px 30px;
+    bottom: 0;
+    width: 100%;
+}
+.footer_column {
+	width: 25%;
+	padding: 0px 35px;
+}
+.footer_column h4 {
+	font-family: 'Sofia', cursive;
+	font-size: 25px;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	font-weight: 600;
+    color: white;
+	position: relative;
+}
+.footer_column h4::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: white;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer_column ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+.footer_column ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: white;
+	font-weight: 300;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer_column ul li a:hover{
+	color: white;
+	padding: 2px;
+}
+.footer_column .social_links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+    color: white;
+	margin-right: 0 10px 10px 0;
+	line-height: 40px;
+	border-radius: 50%;
+	transition: all 0.5s ease;
+}
+.footer_column .social_links a:hover {
+	color: #24262b;
+}
+@media (max-width: 1000px) {
+	.footer_column {
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media (max-width: 520px) {
+	.footer_column {
+    width: 100%;
+}
+}
+/*navigation bar*/
+
+
 .nav_bar {
     position: sticky;
     height: 50px;
@@ -43,6 +133,12 @@
     height: 70px;
     margin-left: 15%;
     z-index: 1;
+    transition: all 0.5s ease;
+}
+
+#top_logo:hover {
+    width: 100px;
+    height: 100px;
 }
 
 #menu {
@@ -57,8 +153,6 @@
 #menu:hover {
     cursor: pointer;
 }
-
-
 @media screen and (max-width: 1000px) {
     .nav_links {
       margin-right: 10%;
