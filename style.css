@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Axiforma_light';
+    src: local('Axiforma Light'), local('Axiforma-Light'),
+        url('Axiforma-Light.woff2') format('woff2'),
+        url('Axiforma-Light.woff') format('woff'),
+        url('Axiforma-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Axiforma';
+    src: local('Axiforma Redular'), local('Axiforma-Redular'),
+        url('Axiforma-Regular.woff2') format('woff2'),
+        url('Axiforma-Regular.woff') format('woff'),
+        url('Axiforma-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Axiforma_medium';
+    src: local('Axiforma Medium'), local('Axiforma-Medium'),
+        url('Axiforma-Medium.woff2') format('woff2'),
+        url('Axiforma-Medium.woff') format('woff'),
+        url('Axiforma-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Axiforma';
+    src: local('Axiforma Bold'), local('Axiforma-Bold'),
+        url('Axiforma-Bold.woff2') format('woff2'),
+        url('Axiforma-Bold.woff') format('woff'),
+        url('Axiforma-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Axiforma';
+    src: local('Axiforma Heavy'), local('Axiforma-Heavy'),
+        url('Axiforma-Heavy.woff2') format('woff2'),
+        url('Axiforma-Heavy.woff') format('woff'),
+        url('Axiforma-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
