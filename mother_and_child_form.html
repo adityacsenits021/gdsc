@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<link href="style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div id="contact-form">
+	<div>
+		<h1>Need to see a Doctor?</h1> 
+		<h4>Let's share your problems directly to our highly qualified Doctors.</h4> 
+	</div>
+		<p id="failure">Oops...Some error Occured...message not sent.</p>  
+		<p id="success">Your message was sent successfully. Thank you! We'll be drop solutions to your issues in your inbox.</p>
+
+		   <form method="post" action="/">
+			<div>
+		      <label for="name">
+		      	<span class="required">Name: *</span> 
+		      	<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+		      </label> 
+			</div>
+			<div>
+		      <label for="age">
+		      	<span class="required">Age: *</span> 
+		      	<input type="text" id="age" name="age" value="" placeholder="Your Age" required="required" tabindex="1" autofocus="autofocus" />
+		      </label> 
+			</div>
+			<div>
+		      <label for="gender">
+		      	<span class="required">Gender: *</span> 
+		      	<input type="text" id="gender" name="gender" value="" placeholder="Your Gender" required="required" tabindex="1" autofocus="autofocus" />
+		      </label> 
+			</div>
+			<div>
+		      <label for="email">
+		      	<span class="required">Email: *</span>
+		      	<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+		      </label>  
+			</div>
+			<div>		          
+		      <label for="message">
+		      	<span class="required">Issues you are facing now ( Please try to be specific ): *</span> 
+		      	<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+		      </label>  
+			</div>
+			<div>		           
+		      <button name="submit" type="submit" id="submit" >SEND</button> 
+			</div>
+		   </form>
+
+	</div>
+</body>
+</html>
