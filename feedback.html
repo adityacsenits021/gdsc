@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<link href="contact_form_style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div id="contact-form">
+    <div>
+        <h1>Any suggestions for us ?</h1> 
+        <h4>We are eager to hear your suggestions for our doctors and our website.</h4> 
+    </div>
+        <p id="failure">Oops...Some error Occured...message not sent.</p>  
+        <p id="success">Thank you for reaching out to us!</p>
+
+           <form method="post" action="/">
+            <div>
+              <label for="name">
+                <span class="required">Name: *</span> 
+                <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+              </label> 
+            </div>
+            <div>
+              <label for="email">
+                <span class="required">Email: *</span>
+                <input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+              </label>  
+            </div>
+            <div>                 
+              <label for="message">
+                <span class="required">Suggestions for us: *</span> 
+                <textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+              </label>  
+            </div>
+            <div>                  
+              <button name="submit" type="submit" id="submit" >SEND</button> 
+            </div>
+           </form>
+
+    </div>
+</body>
+</html>
