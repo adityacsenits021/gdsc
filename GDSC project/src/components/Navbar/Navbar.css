@@ -14,7 +14,7 @@ nav{
 
 
 .Brand-Name{
-    font-size: 30px;
+    font-size: 25px;
     color: whitesmoke;
     line-height: 40px;
     padding: 20px;
@@ -38,7 +38,7 @@ div ul li{
 }
 div ul li a{
     
-    font-size: 25px;
+    font-size: 20px;
     padding: 7px 13px;
     /* border-radius: 3px; */
     text-decoration: none;
@@ -136,4 +136,15 @@ a:hover{
 button:active{
     cursor: progress;
     border: #000000;
+}
+
+.btn{
+    height: 40px;
+    /* margin-left: 70%; */
+    width: 100px;
+    outline: none;
+    border: none;
+    background-color: #b3b3b3;
+    color: white;
+    font-size: 16px;
 }

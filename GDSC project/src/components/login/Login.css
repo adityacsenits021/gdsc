@@ -1,0 +1,51 @@
+.loginwindow{
+    background-color: #00838C;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 40px 0;
+}
+.container{
+    
+    width: 50%;
+    height: 60%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: center; */
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.input input{
+    width: 300px;
+    outline: none;
+    margin: 10px 0px;
+    height: 30px;
+}
+.input label{
+    color: white;
+}
+.container button{
+    outline: none;
+    width: 120px;
+    height: 40px;
+    margin-left: 30%;
+    font-size: 15px;
+    border: none;
+    border-radius: 1px;
+}
+.signuplink{
+    margin: 20px 0px;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.signuplink button{
+    margin-left: 2px;
+    background-color: rgb(44, 44, 66);
+    color: white;
+}
