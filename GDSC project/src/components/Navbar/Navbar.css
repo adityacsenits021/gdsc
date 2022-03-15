@@ -40,7 +40,7 @@ div ul li a{
     
     font-size: 25px;
     padding: 7px 13px;
-    border-radius: 3px;
+    /* border-radius: 3px; */
     text-decoration: none;
     text-transform: uppercase;
     color: white;
