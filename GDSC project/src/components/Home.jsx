@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from './footer/Footer'
+import Homecontent from './homecontent/Homecontent'
 import Signup from './signup/Signup'
 
 function Home(props) {
@@ -7,15 +7,12 @@ function Home(props) {
     <div>
       {!props.user?
       <Signup/>:
-      // <div className="home">Home</div>
+     
+      <Homecontent/>
       
-      <Footer/>
-      
-      // <Additem user={props.user} />
       
     }
-    {/* <Signup/>
-    <Footer/> */}
+    
     </div>
   )
 }

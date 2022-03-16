@@ -18,7 +18,7 @@ const Navbar = (props) => {
         <div class="mainbody">
   <nav>
 
-    <div class="Brand-Name">GDSC PROJECT</div>
+    <div class="Brand-Name">Health Pager</div>
     <div>
       <ul>
         <li><NavLink class="btn" to="/" style={navlinkStyles} >Home</NavLink></li>

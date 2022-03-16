@@ -1,0 +1,60 @@
+
+img{
+    width: 100%;
+    
+    
+}
+
+.images{
+    
+    display: flex;
+    height: 450px;
+    z-index: -1;
+   
+
+    
+   
+   
+    
+    transition: 0.4s linear;
+
+}
+.image{
+    padding:0 30px;
+}
+.images-container{
+    height: 500px;
+    overflow-x: hidden;
+    position: relative;
+    
+    
+    
+   
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+#prev{
+    font-size: 30px;
+    color: black;
+   
+    position: absolute;
+    top: 40%;
+   left: 0;
+   padding: 0;
+
+}
+
+
+#ahead{
+    padding: 0;
+    font-size: 30px;
+    color: black;
+   
+    position: absolute;
+    top: 40%;
+    right: 0px;
+   
+}
