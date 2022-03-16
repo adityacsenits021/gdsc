@@ -153,6 +153,8 @@ i.fa-solid{
       display: flex;
       align-items: center;
       justify-content: center;
+      outline: none;
+      resize: none;
   }
   .button{
       display: flex;
@@ -178,7 +180,9 @@ i.fa-solid{
       
   }
   textarea{
-    
+    resize: none;
       font-size: 30px;
   }
+
+  
   
