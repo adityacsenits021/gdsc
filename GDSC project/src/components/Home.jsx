@@ -8,10 +8,14 @@ function Home(props) {
       {!props.user?
       <Signup/>:
       // <div className="home">Home</div>
+      
       <Footer/>
+      
       // <Additem user={props.user} />
       
     }
+    {/* <Signup/>
+    <Footer/> */}
     </div>
   )
 }

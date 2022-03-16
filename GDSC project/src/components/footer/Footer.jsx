@@ -1,51 +1,37 @@
 import React from 'react'
 import './footer.css'
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 const Footer = () => {
   return (
     <div>
-        <footer class="footer">
-		<div class="upper_container">
-			<div class="row">
-				<div class="footer_column">
-					<h4>Quick links</h4>
-					<ul>
-						<li><a href="#">Ekdam Upar</a></li>
-						<li><a href="#">Thoda Upar</a></li>
-						<li><a href="#">Thoda niche</a></li>
-						<li><a href="#">Ekdam niche</a></li>
-					</ul>
-				</div>
-				<div class="footer_column">
-					<h4>col - 2</h4>
-					<ul>
-						<li><a href="#">2.1</a></li>
-						<li><a href="#">2.2</a></li>
-						<li><a href="#">2.3</a></li>
-						<li><a href="#">2.4</a></li>
-					</ul>
-				</div>
-				<div class="footer_column">
-					<h4>col - 3</h4>
-					<ul>
-						<li><a href="#">link1</a></li>
-						<li><a href="#">link2</a></li>
-						<li><a href="#">link3</a></li>
-						<li><a href="#">link4</a></li>
-					</ul>
-				</div>
-				<div class="footer_column">	
-					<h4>Follow us</h4>
-					<div class="social_links">
-						<a href="#"><i class="fab fa-facebook-f"></i></a>
-						<a href="#"><i class="fab fa-instagram"></i></a>
-						<a href="#"><i class="fab fa-twitter"></i></a>
-						<a href="#"><i class="fab fa-linkedin-in"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+        
+
+
+<footer>
+<div class="footer_content">
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt commodi
+    rerum impedit optio iste a fugiat cupiditate natus excepturi recusandae
+    nesciunt dolorem, sunt ut quam quo eligendi nobis illo possimus. Aut, eos
+    voluptatibus. Alias, iusto!
+  </p>
+  
+  <div class="social_icon">
+
+    <a id="icon-s" href="https://www.facebook.com/srijan.nits/" >
+		<InstagramIcon/>
+		</a>
+    <a href="">
+		<FacebookIcon/>
+	</a>
+      <a  id="icon-s" href="https://www.linkedin.com/company/srijan-nit-silchar"><i id="Linkedin" class="fa-brands fa-linkedin-in fa-linkedin-in-1"></i></a>
+    </div>
+
+</div>
+</footer>
+
     </div>
   )
 }
