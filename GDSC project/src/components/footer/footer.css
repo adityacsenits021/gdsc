@@ -55,13 +55,10 @@
 	}
   }
   
-  body {
-	background: #fcfcfc;
-	width: 100%;
-  }
+  
   
   footer {
-	background: #111;
+	background: teal;
 	height: auto;
 	width: 100%;
 	font-family: sans-serif;
