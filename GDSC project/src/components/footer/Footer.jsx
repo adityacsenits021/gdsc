@@ -12,10 +12,21 @@ const Footer = () => {
 <footer>
 <div class="footer_content">
   <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt commodi
-    rerum impedit optio iste a fugiat cupiditate natus excepturi recusandae
-    nesciunt dolorem, sunt ut quam quo eligendi nobis illo possimus. Aut, eos
-    voluptatibus. Alias, iusto!
+    
+  We, the [NAME], are on a mission to ensure healthy lives and promote well-being for all, at all ages at a minimal cost and professional care from a team of highly qualified doctors. Here you can share all your health issues in a form, our health team will go through it, connect with you and will treat accordingly. We promise to hold your hand until you feel alive in every sense of the word.
+    <p>
+
+  A little reminder :) , 
+    </p>
+    <p>
+
+  Eat Healthy! Feel Healthy! Be Healthy!     
+    </p>
+    <p>
+    🟢🟢🟢
+    </p>
+
+To connect with us, Click on the social media links.
   </p>
   
   <div class="social_icon">
