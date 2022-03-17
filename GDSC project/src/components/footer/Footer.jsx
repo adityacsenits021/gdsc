@@ -30,14 +30,17 @@ To connect with us, Click on the social media links.
   </p>
   
   <div class="social_icon">
+    <li>
 
-    <a id="icon-s" href="https://www.facebook.com/srijan.nits/" >
+    <a id="icon-s" href="" >
 		<InstagramIcon/>
 		</a>
+    </li><li>
     <a href="">
 		<FacebookIcon/>
 	</a>
-      <a  id="icon-s" href="https://www.linkedin.com/company/srijan-nit-silchar"><i id="Linkedin" class="fa-brands fa-linkedin-in fa-linkedin-in-1"></i></a>
+      <a  id="icon-s" href=""><i id="Linkedin" class="fa-brands fa-linkedin-in fa-linkedin-in-1"></i></a>
+    </li>
     </div>
 
 </div>
