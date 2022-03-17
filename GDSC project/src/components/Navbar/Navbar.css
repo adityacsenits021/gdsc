@@ -169,6 +169,7 @@ button:active{
       width: 100px;
       color: white;
       font-size: 15px;
+      margin-left: 0;
   }
   .btn:hover{
       cursor: pointer;
@@ -260,5 +261,6 @@ button:active{
   }
 
   .container3{
-padding-top: 4%;
+padding-top: 3%;
+
   }
