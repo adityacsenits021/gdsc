@@ -1,0 +1,46 @@
+.owl-prev{
+    border: none;
+    font-size: 40px;
+    height: 60px;
+    padding: 0px 10px;
+    background-color: black;
+}
+.owl-next{
+    border: none;
+    height: 60px;
+    padding: 0px 10px;
+}
+.owl-prev span{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+}
+.owl-next span{
+    font-size: 40px;
+    color: white;
+}
+
+.owl-prev:hover{
+    background-color: black;
+}
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    /* background: beige; */
+}
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
+    /* background: none; */
+    background-color: teal;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+}
+
+.owl-theme .owl-dots {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    display: none;
+}

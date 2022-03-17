@@ -46,6 +46,10 @@ img{
    padding: 0;
 
 }
+#prev:hover{
+    color: teal;
+
+}
 
 
 #ahead{
@@ -57,4 +61,12 @@ img{
     top: 40%;
     right: 0px;
    
+}
+#ahead:hover{
+    color: teal;
+   
+}
+.move:hover{
+    cursor: pointer;
+    
 }
