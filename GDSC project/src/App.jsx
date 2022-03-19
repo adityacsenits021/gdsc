@@ -8,6 +8,8 @@ import {onAuthStateChanged} from 'firebase/auth'
 import { useEffect, useState } from 'react';
 import Login from './components/login/Login';
 import Signup from './components/signup/Signup'
+import Messenger from './components/messenger/Messenger'
+import Chat from './components/Chat'
 
 function App() {
   const [user, setUser] = useState(null);
@@ -38,6 +40,7 @@ function App() {
         <Route path='/' element={<Home user={user} />}  />
         <Route path='/login' element={<Login/>} />
         <Route path='/signup' element={<Signup/>} />
+        <Route path='/chat' element={<Chat user={user}/>} />
       </Routes>
       
     </div>

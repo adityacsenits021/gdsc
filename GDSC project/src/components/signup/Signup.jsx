@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import './signup.css';
-import {auth,} from '../../database';
+import {db,auth,} from '../../database';
+import { collection, onSnapshot, serverTimestamp, addDoc,
+    
+    query, where,
+    orderBy,doc, getDoc } from "firebase/firestore";
 import {createUserWithEmailAndPassword, updateProfile} from 'firebase/auth'
 function Signup() {
     const navigate=useNavigate();
@@ -15,11 +19,20 @@ function Signup() {
                     displayName:credential.name,
                 })
                 console.log('user created:', cred.user)
+                const colRef1 = collection(db, "patients");
+        addDoc(colRef1, {
+            uid:cred.user.uid,
+            name:credential.name,
+       
+          createdAt: serverTimestamp(),
+        })
                 navigate('/',{replace:true})
             })
             .catch(err => {
                 console.log(err.message)
             })
+
+            
     }
   return (
     <div className='signupwindow'>
