@@ -65,7 +65,7 @@ const Navbar = (props) => {
       <ul>
       <li><NavLink class="btn" to="/" style={navlinkStyles} >Home</NavLink></li>
         <li><NavLink to="/checkup" class="btn" style={navlinkStyles} >Check UP</NavLink></li>
-        <li><NavLink to="/contact" class="btn" style={navlinkStyles} >Contact Us</NavLink></li>
+        <li><NavLink to="/chat" class="btn" style={navlinkStyles} >Chat with Us</NavLink></li>
         
       <div class="container3">
     {

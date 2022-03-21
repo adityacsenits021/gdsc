@@ -1,5 +1,7 @@
 import React,{useRef,useEffect,useState} from 'react'
 import Message from './Message'
+import Avatar from '@mui/material/Avatar';
+import { deepOrange, deepPurple } from '@mui/material/colors';
 import { db, auth} from "../../database";
 import SendIcon from '@mui/icons-material/Send';
 import { collection, onSnapshot, serverTimestamp, addDoc,
@@ -14,6 +16,7 @@ const Messenger = (props) => {
     const [messages, setmessages] = useState([]);
     const [receiverId, setreceiverId] = useState("");
     const [sendmessage, setsendmessage] = useState("")
+    const [patientname, setpatientname] = useState("")
     const [toggleclass, settoggleclass] = useState("")
     const user=props.user
     const scrollRef=useRef();
@@ -28,7 +31,7 @@ const Messenger = (props) => {
       }, [messages]);
       
     useEffect(() => {
-        console.log(user)
+        console.log("user ifo is",user)
         // console.log(auth.currentUser.uid)
         // console.log(user.uid)
         const colRef = collection(db, 'patients')
@@ -103,7 +106,9 @@ const Messenger = (props) => {
     {/* <!-- header --> */}
     <div class="header">
         <div class="userimg">
-            <img src="user.jpg" class="cover"/>
+            {/* <img src="user.jpg" class="cover"/> */}
+            <Avatar sx={{ bgcolor: deepOrange[500] }}>{user.displayName[0]}</Avatar>
+            {/* <Avatar sx={{ bgcolor: deepPurple[500] }}>OP</Avatar> */}
         </div>
         <ul class="nav_icons">
             <li><ion-icon name="scan-circle-outline"></ion-icon></li>
@@ -121,15 +126,21 @@ const Messenger = (props) => {
     {/* <!-- chatlist --> */}
     <div class="chatlist">
         {
-            patients.map((patient)=>{
+            patients
+            .filter((patient)=>{
+               return  patient.uid!=user.uid
+            })
+            .map((patient)=>{
                 return <div class="block "
                 onClick={()=>{
                     setreceiverId(patient.uid)
+                    setpatientname(patient.name)
                     
                 }}
                 >
                 <div class="imgbx">
-                    <img src="img1.jpg" class="cover"/>
+                    {/* <img src="img1.jpg" class="cover"/> */}
+                    <Avatar sx={{ bgcolor: 'black' }}>{patientname[0]}</Avatar>
                 </div>
                 <div class="details">
                     <div class="listHead">
@@ -158,7 +169,9 @@ const Messenger = (props) => {
     <div class="header">
         <div class="imgText">
             <div class="userimg">
-                <img src="img1.jpg" class="cover"/>
+                {/* <img src="img1.jpg" class="cover"/> */}
+                <Avatar sx={{ bgcolor: 'black' }}>{patientname[0]}</Avatar>
+                {/* <Avatar sx={{ bgcolor: deepPurple[500] }}>OP</Avatar> */}
             </div>
             <h4>Name One<br/><span>online</span></h4>
         </div>

@@ -7,7 +7,7 @@ const Chat = (props) => {
          {!props.user?
       "":
      
-      <Messenger/>
+      <Messenger user={props.user}/>
       
       
     }
